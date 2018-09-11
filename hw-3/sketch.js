@@ -6,5 +6,5 @@ function setup()
 
 function draw()
 {
-  text("Hello World!",100,200);
+  text("Hello World!",300,200);
 }
