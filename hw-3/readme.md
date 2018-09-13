@@ -1,5 +1,7 @@
 Scotty Graham
 
+https://scottyg86.github.io/120-work/hw-3/
+
 # Homework for Week 3
 
 
