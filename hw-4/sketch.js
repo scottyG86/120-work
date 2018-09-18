@@ -7,7 +7,7 @@ function draw()
 {
   push();
   translate(360,240);
-  rotate(-30);
+  rotate(-70);
   fill('rgb(149,98,0)');
   rect(-100,-50,100,50);
   pop();
