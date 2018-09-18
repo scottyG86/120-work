@@ -6,6 +6,7 @@ function setup()
 }
 function draw()
 {
+  text('V.1');
   push();
   rotate(-30);
   fill('rgb(111, 63, 13)')
