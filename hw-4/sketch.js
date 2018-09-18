@@ -1,14 +1,13 @@
 function setup()
 {
   createCanvas(720,480);
-  background('black')
+  translate(360,240);
 }
 function draw()
 {
   push();
-  translate(360,240);
   rotate(-70);
-  fill('rgb(15,13,111)')
+  fill('rgb(111,98,13)')
   rect(-100,-50,100,50);
   pop();
 }
