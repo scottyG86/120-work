@@ -30,4 +30,4 @@ I found that using Markdown is a lot easier than I thought it would be. I may us
 
 ## Helping other students
 
-I responded to @zeekmans issue. ![Picture of issue](Screen Shot 2018-09-05 at 10.44.38 AM.png)Here is my response.![Picture of response](Screen Shot 2018-09-05 at 10.44.54 AM.png)
+I responded to @zeemakns issue. ![Picture of issue](Screen Shot 2018-09-05 at 10.44.38 AM.png)Here is my response.![Picture of response](Screen Shot 2018-09-05 at 10.44.54 AM.png)
