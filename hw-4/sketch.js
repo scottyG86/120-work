@@ -8,7 +8,7 @@ function draw()
   push();
   translate(360,240);
   rotate(-70);
-  fill('rgb(149,98,0)');
+  fill('rgb(48,149,0)');
   rect(-100,-50,100,50);
   pop();
 
