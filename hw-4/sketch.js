@@ -54,9 +54,30 @@ function draw()
     pop();//end eyes
 
     push();//mouth with teeth
-      fill('rgb(248,251,114)');
-      ellipse(10,10,70,70);
-      triangle()
+      fill('rgb(51,34,34)')
+      ellipse(0,50,70,50);
+        push();
+          translate(0,15);
+          fill('rgb(248,251,114)');
+          triangle(0,15,8,40,20,15);
+        pop();
+
+        push();
+          translate(0,15);
+          fill('rgb(248,251,114)');
+          triangle(0,15,-8,40,-20,15);
+        pop();
+
+        push();
+          translate(2,80);
+          scale(0.5,-0.5);
+          fill('rgb(248,251,114)');
+          triangle(8,15,-2,40,-12,15);
+        pop();
+      noFill();
+      strokeWeight(10);
+      stroke('rgb(47,64,0)');
+      ellipse(0,50,70,50);
     pop();
 
   pop();//end character
