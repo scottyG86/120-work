@@ -5,6 +5,7 @@ function setup()
 }
 function draw()
 {
+  //my character is going to resemble a demon spider
   //sets background color
   background('black');
   push();//start character
@@ -12,8 +13,12 @@ function draw()
     translate(360,240);
     push();//body start
     //body code
-      fill('rgb(152,131,57)');
-      rect(0,0,300,150);
+      fill('rgb(73,115,32)');
+      ellipse(-150,50,300,200);
     pop();//body end
+
+    push();
+
+    pop();
   pop();//end character
 }
