@@ -17,8 +17,13 @@ function draw()
       ellipse(-150,50,300,200);
     pop();//body end
 
-    push();
-
+    push();//2 back legs
+    strokeWeight(20);
+    fill('rgb(58,102,14)');
+    line(50,0,150,200);
+    line(150,200,200,230);
+    line(-50,0,-150,-200);
+    line(-150,-200,-200,-230);
     pop();
   pop();//end character
 }
