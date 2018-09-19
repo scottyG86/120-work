@@ -12,7 +12,7 @@ function draw()
     translate(360,240);
     push();//body start
     //body code
-      rotate(-90);
+      rotate(0);
       fill('rgb(152,131,57)');
       rect(0,0,300,150);
     pop();//body end
