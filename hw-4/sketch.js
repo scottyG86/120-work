@@ -1,14 +1,20 @@
 function setup()
 {
+  //creates canvas
   createCanvas(720,480);
-  background('black');
 }
 function draw()
 {
-  push();
-  translate(360,240);
-  rotate(-90);
-  fill('rgb(152,131,57)');
-  rect(-100,-50,100,50);
-  pop();
+  //sets background color
+  background('black');
+  push();//start character
+  // centers character
+    translate(360,240);
+    push();//body start
+    //body code
+      rotate(-90);
+      fill('rgb(152,131,57)');
+      rect(0,0,300,150);
+    pop();//body end
+  pop();//end character
 }
