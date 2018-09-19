@@ -32,17 +32,25 @@ function draw()
       fill('rgb(58,102,14)');
       //isolated so that I can rotate legs and see both sets
         push();//left
-          rotate(30)
+          rotate(30);
           line(50,0,150,200);
           line(150,200,150,270);
         pop();
 
         push();//right
-          rotate(-30)
+          rotate(-30);
           line(-50,0,-150,-200);
           line(-150,-200,-150,-270);
         pop();
     pop();//end front legs
+
+    push();//4 eyes
+      fill('rgb(145,22,9)');
+      ellipse(20,20,10,10);
+      ellipse(40,60,10,10);
+      ellipse(-20,-20,10,10);
+      ellipse(-40,-60,10,10);
+    pop();
 
   pop();//end character
 }
