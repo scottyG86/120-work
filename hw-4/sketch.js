@@ -78,6 +78,14 @@ function draw()
       strokeWeight(10);
       stroke('rgb(47,64,0)');
       ellipse(0,50,70,50);
+    pop();//end mouth
+
+    push();
+      fill('rgb(0,0,0)');
+      triangle(-50,-35,0,5,50,-35);
+      fill('rgb(73,115,32)');
+      stroke('rgb(73,115,32)');
+      triangle(-20,-35,0,7,20,-35);
     pop();
 
   pop();//end character
