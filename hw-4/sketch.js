@@ -20,7 +20,7 @@ function draw()
     push();//2 back legs
     strokeWeight(20);
     fill('rgb(58,102,14)');
-    line(50,0,150,200);
+    line(0,0,150,200);
     line(150,200,200,230);
     line(-50,0,-150,-200);
     line(-150,-200,-200,-230);
