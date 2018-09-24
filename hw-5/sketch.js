@@ -14,7 +14,7 @@ function draw()
   let posX = 0;
   let posY = 0;
 
-  fill('rgb(red,green,blue)');
+  fill('rgb 256,0,256');
   ellipse( posX, posY, 5, 5);
 
   if(red < 256)
