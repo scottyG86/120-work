@@ -1,11 +1,12 @@
 function setup()
 {
   createCanvas(720,480);
-  background('black');
 }
 
 function draw()
 {
+  background('black');
+
   let red = 0;
   let green = 0;
   let blue = 0;
