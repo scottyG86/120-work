@@ -5,7 +5,8 @@ function setup()
 
 function draw()
 {
-  background('black');
+  background('green');
+  translate(360,240);
 
   let red = 0;
   let green = 0;
@@ -16,30 +17,33 @@ function draw()
   fill('rgb(red,green,blue)');
   ellipse( posX, posY, 5, 5);
 
-  if(red=<256)
+  if(red<256)
   {
-    red = red + 1
+    red = red + 1;
   }
-  else if (red=>256)
+  else if (red>256)
   {
-    red = red - 1
-  }
-
-  if(green=<256)
-  {
-    green = green + 3
-  }
-  else if (green=>256)
-  {
-    green = green - 3
+    red = red - 1;
   }
 
-  if(blue=<256)
+  if(green<256)
   {
-    blue = blue + 5
+    green = green + 3;
   }
-  else if (blue=>256)
+  else if (green>256)
   {
-    blue = blue - 5
+    green = green - 3;
   }
+
+  if(blue<256)
+  {
+    blue = blue + 5;
+  }
+  else if (blue>256)
+  {
+    blue = blue - 5;
+  }
+  text("r" + floor(red));
+  text("g" + floor(green));
+  text("b" + floor(blue));
 }
