@@ -1,10 +1,10 @@
-setup()
+function setup()
 {
   createCanvas(720,480);
   background('black');
 }
 
-draw()
+function draw()
 {
   let red = 0;
   let green = 0;
