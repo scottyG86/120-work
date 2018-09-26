@@ -11,7 +11,13 @@ translate(width*.5, height*.5);
 
 function draw()
 {
+  if(posY > (100 + 240))
+      {
+        posY = 240;
+        angle = cos(rot)
 
+
+      }
 
   let fr = frameRate();
   push();
@@ -22,13 +28,7 @@ function draw()
     text( "angle " + angle, 10, 80  );
   pop();
   push();
-    if(posY > (100 + 240))
-      {
-        posY = 240;
-        angle = cos(rot)
-        rotate(angle);
-        rot= rot + 1;
-      }
+
     translate(360,posY);
 
 
@@ -37,7 +37,7 @@ function draw()
 
     fill('rgb(200,50,0)');
     ellipse(0 , 0, 10, 30);
-
+  rotate(angle);
     posY = posY + 1;
 
 
