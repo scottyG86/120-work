@@ -1,4 +1,4 @@
-let rot = 0;
+let rot = 91;
 let posY = 240;
 
 function setup()
@@ -30,6 +30,6 @@ function draw()
   if(posY > 100 + 240)
   {
     posY = 240;
-    rotate(radians(91));
+    rotate(radians(rot));
   }
 }
