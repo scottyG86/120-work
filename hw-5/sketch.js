@@ -31,5 +31,6 @@ function draw()
   {
     posY = 240;
     rotate(radians(rot));
+    rot= rot + rot
   }
 }
