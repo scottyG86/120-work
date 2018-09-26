@@ -22,7 +22,7 @@ function draw()
 
 
 
-  stroke('rgb 200,50,0');
+  fill('rgb(200,50,0)');
   ellipse(0 , 0, 1);
 
   posY = posY + 1
