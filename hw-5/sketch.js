@@ -21,8 +21,7 @@ translate(width*0.5,height*0.5);
 
 
 stroke('rgb 200,50,0');
-strokeWeight(50)
-point(0 , posY);
+ellipse(0 , posY, 1);
 
 posY = posY + 1
 }
