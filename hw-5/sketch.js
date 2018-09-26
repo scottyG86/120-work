@@ -36,7 +36,7 @@ function draw()
 
 
     fill('rgb(200,50,0)');
-    ellipse(0 , 30, 1);
+    ellipse(0 , 0, 10, 30);
 
     posY = posY + 1;
 
