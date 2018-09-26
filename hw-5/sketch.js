@@ -29,7 +29,7 @@ function draw()
 
   if(posY > 100 + 240)
   {
-    posY = 0;
+    posY = 240;
     rotate(radians(91));
   }
 }
