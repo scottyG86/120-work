@@ -20,6 +20,12 @@ function draw()
     text( "rot " + rot, 10, 60  );
   pop();
   push();
+    if(posY > (100 + 240))
+      {
+        posY = 240;
+        rotate( 1 );
+        rot= rot + 1;
+      }
     translate(360,posY);
 
 
@@ -31,11 +37,6 @@ function draw()
 
     posY = posY + 1;
 
-    if(posY > (100 + 240))
-    {
-      posY = 240;
-      rotate( 1 );
-      rot= rot + 1;
-    }
+
   pop();
 }
