@@ -9,7 +9,7 @@ function draw()
   let fr = frameRate();
   text( "frame rate: " + fr, 10, 20 );
   push();
-  translate(360,240);
+  translate(width*0.5,height*0.5);
 
   background('green');
 
