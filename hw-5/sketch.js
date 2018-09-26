@@ -9,12 +9,13 @@ createCanvas(720,480);
 
 function draw()
 {
+  background('green');
+
 let fr = frameRate();
 text( "frame rate: " + fr, 10, 20 );
 text( "posY " + posY, 10, 40 );
 translate(width*0.5,height*0.5);
 
-background('green');
 
 
 
@@ -24,5 +25,4 @@ strokeWeight(50)
 point(0 , posY);
 
 posY = posY + 1
-pop();
 }
