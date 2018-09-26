@@ -1,4 +1,4 @@
-let rolet rot = 0;
+let rot = 0;
 let posY = 0;
 
 function setup()
