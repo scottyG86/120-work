@@ -4,12 +4,12 @@ let posY = 0;
 function setup()
 {
 createCanvas(720,480);
+background('green');
 
 }
 
 function draw()
 {
-  background('green');
 
 let fr = frameRate();
 text( "frame rate: " + fr, 10, 20 );
