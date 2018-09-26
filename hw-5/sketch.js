@@ -1,5 +1,6 @@
 let rot = 91;
 let posY = 240;
+let angle = 0;
 
 function setup()
 {
@@ -18,12 +19,14 @@ function draw()
     text( "frame rate: " + fr, 10, 20 );
     text( "posY " + posY, 10, 40 );
     text( "rot " + rot, 10, 60  );
+    text( "angle " + angle, 10, 80  );
   pop();
   push();
     if(posY > (100 + 240))
       {
         posY = 240;
-        rotate( 1 );
+        angle = cos(rot)
+        rotate(angle);
         rot= rot + 1;
       }
     translate(360,posY);
