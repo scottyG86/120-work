@@ -1,11 +1,11 @@
 let rot = 0;
-let posY = 0;
+let posY = 240;
 
 function setup()
 {
 createCanvas(720,480);
 background('green');
-
+translate(width*.5, height*.5);
 }
 
 function draw()
@@ -15,7 +15,8 @@ function draw()
   let fr = frameRate();
   text( "frame rate: " + fr, 10, 20 );
   text( "posY " + posY, 10, 40 );
-  translate(0,posY);
+  text( "rot " + rot, 10, 60  );
+  translate(360,posY);
 
 
 
@@ -26,7 +27,7 @@ function draw()
 
   posY = posY + 1
 
-  if(posY > 100)
+  if(posY > 100 + 240)
   {
     posY = 0;
     rotate(radians(91));
