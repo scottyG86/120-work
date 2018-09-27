@@ -30,9 +30,6 @@ function draw()
 
   push();
 
-  pop();
-  push();
-
     translate(360,posY);
 
 
