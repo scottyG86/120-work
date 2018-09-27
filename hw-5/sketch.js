@@ -32,6 +32,11 @@ function draw()
 
       }
 
+  if(posX > 720)
+  {
+    posX = 0;
+  }
+
 
   push();
 
@@ -41,7 +46,7 @@ function draw()
 
 
     rotate(angle);
-    fill('rgb(random(0,255),random(0,255),random(0,255))');
+    fill('rgb(random(255),random(255),random(255))');
     ellipse(0 , 0, 10, 30);
     posY = posY + 1;
     posX = posX + 1
