@@ -15,11 +15,12 @@ translate(width*.5, height*.5);
 
 function draw()
 {
+  let fr = frameRate();
   text( "frame rate: " + fr, 10, 20 );
   text( "posY " + posY, 10, 40 );
   text( "rot " + rot, 10, 60  );
   text( "angle " + angle, 10, 80  );
-  let fr = frameRate();
+
   if(posY > (100 + 240))
       {
         posY = 240;
