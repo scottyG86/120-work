@@ -21,7 +21,7 @@ function draw()
       {
         posY = 240;
         rot = rot + 1
-        angle = radians(rot)
+        angle = radians(rot);
 
 
       }
