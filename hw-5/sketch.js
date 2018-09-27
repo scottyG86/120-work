@@ -7,6 +7,12 @@ function setup()
 createCanvas(720,480);
 
 translate(width*.5, height*.5);
+
+    background('green');
+    text( "frame rate: " + fr, 10, 20 );
+    text( "posY " + posY, 10, 40 );
+    text( "rot " + rot, 10, 60  );
+    text( "angle " + angle, 10, 80  );
 }
 
 function draw()
@@ -14,18 +20,15 @@ function draw()
   if(posY > (100 + 240))
       {
         posY = 240;
-        angle = cos(rot)
+        rot = rot + 1
+        angle = radians(rot)
 
 
       }
 
   let fr = frameRate();
   push();
-    background('green');
-    text( "frame rate: " + fr, 10, 20 );
-    text( "posY " + posY, 10, 40 );
-    text( "rot " + rot, 10, 60  );
-    text( "angle " + angle, 10, 80  );
+
   pop();
   push();
 
@@ -34,10 +37,9 @@ function draw()
 
 
 
-
+    rotate(angle);
     fill('rgb(200,50,0)');
     ellipse(0 , 0, 10, 30);
-  rotate(angle);
     posY = posY + 1;
 
 
