@@ -14,11 +14,11 @@ function setup() //Setup
 
 function draw()
 {
-  if(posY > height)// Creates infinite screen effect
+  if(posY > height+100)// Creates infinite screen effect( it goes a little farther than the screen to hide ellipses at the edge of the screen)
       {
         posY = 0;
       }
-  if(posX > width)
+  if(posX > width+100)
   {
     xShift += 20;
     posX = xShift;
