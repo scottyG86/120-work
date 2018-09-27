@@ -31,10 +31,9 @@ function draw()
 
 
       }
-
   if(posX > 720)
   {
-    posX = 0;
+    posX = 0
   }
 
 
