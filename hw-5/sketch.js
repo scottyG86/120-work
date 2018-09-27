@@ -1,5 +1,6 @@
 let rot = 91;
 let posY = 240;
+let posX = 360;
 
 let angle = 0;
 
@@ -24,7 +25,8 @@ function draw()
   if(posY > (100 + 240))
       {
         posY = 240;
-        rot = rot + 1
+
+        rot = rot + 10
         angle = radians(rot);
 
 
@@ -33,15 +35,16 @@ function draw()
 
   push();
 
-    translate(360,posY);
+    translate(posX,posY);
 
 
 
 
     rotate(angle);
-    fill('rgb(200,50,0)');
+    fill('rgb(random(0,255),random(0,255),random(0,255))');
     ellipse(0 , 0, 10, 30);
     posY = posY + 1;
+    posX = posX + 1
 
 
   pop();
