@@ -1,5 +1,6 @@
 let rot = 91;
 let posY = 240;
+let fr = frameRate();
 let angle = 0;
 
 function setup()
@@ -26,7 +27,7 @@ function draw()
 
       }
 
-  let fr = frameRate();
+
   push();
 
   pop();
