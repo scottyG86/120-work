@@ -1,42 +1,28 @@
-let rot = 1;
+let rot = 1; //Variables are declared here.
 let posY = 240;
 let posX = 360;
 let xShift = -200;
-
 let angle = 0;
 
-function setup()
+function setup() //Setup
 {
-createCanvas(720,480);
-
-translate(width*.5, height*.5);
-
-    background('white');
+  createCanvas(720,480);
+  translate(width*.5, height*.5);
+  background('white');
 
 }
 
 function draw()
 {
-  let fr = frameRate();
-  //text( "frame rate: " + fr, 10, 20 );
-  //text( "posY " + posY, 10, 40 );
-  //text( "rot " + rot, 10, 60  );
-  //text( "angle " + angle, 10, 80  );
-
-  if(posY > height)
+  if(posY > height)// Creates infinite screen effect
       {
         posY = 0;
-
-
-
-
-
       }
   if(posX > width)
   {
     xShift += 20;
     posX = xShift;
-    if(xShift > width)
+    if(xShift > width)//xShift determines the amount that the X value changes as to prevent repeating lines
     {
       xShift = -200;
     }
@@ -44,21 +30,15 @@ function draw()
 
 
 
-  push();
-
-    translate(posX,posY);
-
-
-
-    noStroke();
-    rotate(angle);
-    fill(color(random(255),random(255),random(255)));
-    ellipse(0 , 0, 10, 90);
-    posY = posY + 2;
-    posX = posX + 1;
-    rot = rot + random(1);
-    angle = radians(rot);
-
-
+  push();//Runs all of the steps to create the art
+    translate(posX,posY);// Translate is used to move so that the rotate step isn't super complicated
+    noStroke();// adds to the abstract effect
+    rotate(angle);// rotates the ellipse to create a more random effect
+    fill(color(random(255),random(255),random(255)));// randomizes color
+    ellipse(0 , 0, 10, 90);// draws ellipse
+    posY = posY + 2; // Shifts value of Y position
+    posX = posX + 1;// Shifts value of X position
+    rot = rot + random(1); // part 1 of creating value to be rotated( random is there to mess around with)
+    angle = radians(rot); // Part 2 of creating value to be rotated
   pop();
 }
