@@ -1,6 +1,6 @@
 let rot = 1; //Variables are declared here.
-let posY = 240;
-let posX = 360;
+let posY = 0;
+let posX = 0;
 let xShift = -200;
 let angle = 0;
 
