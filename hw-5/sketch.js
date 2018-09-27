@@ -1,6 +1,6 @@
 let rot = 91;
 let posY = 240;
-let fr = frameRate();
+
 let angle = 0;
 
 function setup()
@@ -10,14 +10,16 @@ createCanvas(720,480);
 translate(width*.5, height*.5);
 
     background('green');
-    text( "frame rate: " + fr, 10, 20 );
-    text( "posY " + posY, 10, 40 );
-    text( "rot " + rot, 10, 60  );
-    text( "angle " + angle, 10, 80  );
+
 }
 
 function draw()
 {
+  text( "frame rate: " + fr, 10, 20 );
+  text( "posY " + posY, 10, 40 );
+  text( "rot " + rot, 10, 60  );
+  text( "angle " + angle, 10, 80  );
+  let fr = frameRate();
   if(posY > (100 + 240))
       {
         posY = 240;
