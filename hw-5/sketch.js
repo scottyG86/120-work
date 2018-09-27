@@ -1,6 +1,6 @@
 let rot = 91;
-let posY = 240;
-let posX = 360;
+let posY = 0;
+let posX = -100;
 let xShift = 0;
 
 let angle = 0;
