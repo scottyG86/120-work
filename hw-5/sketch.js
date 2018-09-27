@@ -1,7 +1,7 @@
-let rot = 91;
-let posY = 0;
-let posX = -100;
-let xShift = 0;
+let rot = 1;
+let posY = 240;
+let posX = 360;
+let xShift = -200;
 
 let angle = 0;
 
@@ -36,7 +36,12 @@ function draw()
   {
     xShift += 20;
     posX = xShift;
+    if(xShift > width)
+    {
+      xShift = -200;
+    }
   }
+
 
 
   push();
@@ -51,7 +56,7 @@ function draw()
     ellipse(0 , 0, 10, 90);
     posY = posY + 2;
     posX = posX + 1;
-    rot = rot + random(100);
+    rot = rot + random(1);
     angle = radians(rot);
 
 
