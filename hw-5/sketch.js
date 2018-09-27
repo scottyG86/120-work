@@ -1,6 +1,7 @@
 let rot = 91;
 let posY = 240;
 let posX = 360;
+let xShift = 0;
 
 let angle = 0;
 
@@ -16,14 +17,13 @@ translate(width*.5, height*.5);
 
 function draw()
 {
-  frameRate(120);
   let fr = frameRate();
-  text( "frame rate: " + fr, 10, 20 );
-  text( "posY " + posY, 10, 40 );
-  text( "rot " + rot, 10, 60  );
-  text( "angle " + angle, 10, 80  );
+  //text( "frame rate: " + fr, 10, 20 );
+  //text( "posY " + posY, 10, 40 );
+  //text( "rot " + rot, 10, 60  );
+  //text( "angle " + angle, 10, 80  );
 
-  if(posY > 450)
+  if(posY > height)
       {
         posY = 0;
 
@@ -32,9 +32,10 @@ function draw()
 
 
       }
-  if(posX > 720)
+  if(posX > width)
   {
-    posX = 0
+    xShift += 20;
+    posX = xShift;
   }
 
 
@@ -44,10 +45,10 @@ function draw()
 
 
 
-
+    noStroke();
     rotate(angle);
     fill(color(random(255),random(255),random(255)));
-    ellipse(0 , 0, 10, 30);
+    ellipse(0 , 0, 10, 90);
     posY = posY + 2;
     posX = posX + 1;
     rot = rot + random(100);
