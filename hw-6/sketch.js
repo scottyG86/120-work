@@ -3,7 +3,7 @@ let = posY;
 let = red
 let = green
 let = blue
-function setup
+function setup()
 {
   createCanvas(720,480);
 
@@ -11,7 +11,7 @@ function setup
   posY = width/2;
 }
 
-function setup
+function draw()
 {
   fill('rgb(red,green,blue)')
   ellipse(posX,posY, 1)
