@@ -3,8 +3,7 @@ let = posY;
 let = red
 let = green
 let = blue
-function setup
-{
+function setup{
   createCanvas(720,480);
 
   posX = width/2;
