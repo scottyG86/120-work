@@ -19,8 +19,8 @@ function draw()
   fill(color(red,green,blue));
   ellipse(posX,posY, 10, 1);
 
-  posX = floor(random(height*.01+constrain(xShift,0,width)));
-  posY = floor(random(height*.01+constrain(yShift,0,height)));
+  posX = floor(random(height*.01+constrain(xShift%1920,0,width)));
+  posY = floor(random(height*.01+constrain(yShift/2,0,height)));
 
   ellipse(posX,posY, 1, 10);
 
