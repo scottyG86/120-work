@@ -1,25 +1,39 @@
-let = posX;
-let = posY;
-let = red
-let = green
-let = blue
+let posX = 0;
+let posY = 0;
+let red = 0;
+let green = 0;
+let blue = 0;
+let xShift = 0;
+let yShift = 0;
 function setup()
 {
-  createCanvas(720,480);
-
-  posX = width/2;
-  posY = width/2;
+  createCanvas(1920,1080);
 }
 
 function draw()
 {
-  fill('rgb(red,green,blue)')
-  ellipse(posX,posY, 1)
+  let i = 0;
+  while(i<100)
+  {
+  noStroke();
+  fill(color(red,green,blue));
+  ellipse(posX,posY, 10, 1);
 
-  posX = floor(random((posY+posX)*.01));
-  posY = floor(random((posX+posY)*.01));
+  posX = floor(random(height*.01+constrain(xShift,0,width)));
+  posY = floor(random(height*.01+constrain(yShift,0,height)));
 
-  blue = constrain(abs(blue - green),0,256)
-  green = constrain(abs(green - red),0,256)
-  red = constrain(abs(random(256)*3),0,256)
+  ellipse(posX,posY, 1, 10);
+
+  xShift++;
+  yShift++;
+
+  blue = constrain(abs(blue - green),0,256);
+  green = constrain(abs(green - red),0,256);
+  red = constrain(abs(random(256)),0,256);
+  i++;
+}
+
+
+
+
 }
