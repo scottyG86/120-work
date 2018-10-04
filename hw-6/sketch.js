@@ -13,7 +13,7 @@ function setup()
 function draw()
 {
   let i = 0;
-  while(i<100)
+  while(i<7)
   {
   noStroke();
   fill(color(red,green,blue));
