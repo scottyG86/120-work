@@ -49,6 +49,11 @@ The setup is a very simple `createCanvas` & `background` so I won't spend too mu
 `fill(255);`&
 `ellipse(ball.x, ball.y, ball.width, ball.width);` Draws the ball at the positions and size stated beforehand.
 
+`function mousePressed() {
+    ball.scale_x = map(mouseX, 0, width, 0.5, 10);
+    ball.scale_y = map(mouseY, 0, height, 0.5, 10);
+}` Takes mouse input and turns it into changes in speed/direction for the ball.
+
 ## How did you alter the sketch?
 
 <!--
