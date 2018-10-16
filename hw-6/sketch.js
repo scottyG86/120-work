@@ -1,10 +1,11 @@
-let posX = 0;
-let posY = 0;
-let red = 0;
-let green = 0;
-let blue = 0;
-let xShift = 0;
-let yShift = 0;
+let dot = {};// dot is declared here along with all of its parts
+dot.posX = 0;
+dot.posY = 0;
+dot.red = 0;
+dot.green = 0;
+dot.blue = 0;
+dot.xShift = 0;
+dot.yShift = 0;
 function setup()
 {
   createCanvas(1920,1080);
@@ -13,27 +14,24 @@ function setup()
 function draw()
 {
   let i = 0;
-  while(i<7)
+  while(i<7)//this is to speed up the program 7x
   {
   noStroke();
-  fill(color(red,green,blue));
-  ellipse(posX,posY, 10, 1);
+  fill(color(dot.red,dot.green,dot.blue));// this creates the first dot in a pair
+  ellipse(dot.posX,dot.posY, 10, 1);
 
-  posX = floor(random(height*.01+constrain(xShift%1920,0,width)));
-  posY = floor(random(height*.01+constrain(yShift/2,0,height)));
+  dot.posX = floor(random(height*.01+constrain(dot.xShift%1920,0,width)));
+  dot.posY = floor(random(height*.01+constrain(dot.yShift/2,0,height)));// this declares the dot positions
 
-  ellipse(posX,posY, 1, 10);
+  ellipse(dot.posX,dot.posY, 1, 10); //this Creates the second dot in a pair
 
-  xShift++;
-  yShift++;
+  dot.xShift++;
+  dot.yShift++;// this starts the dots in the corner and moves them out
 
-  blue = constrain(abs(blue - green),0,256);
-  green = constrain(abs(green - red),0,256);
-  red = constrain(abs(random(256)),0,256);
+  dot.blue = constrain(abs(dot.blue - dot.green),0,256);
+  dot.green = constrain(abs(dot.green - dot.red),0,256);// random color
+  dot.red = constrain(abs(random(256)),0,256);
   i++;
 }
-
-
-
 
 }
