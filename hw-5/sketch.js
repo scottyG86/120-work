@@ -34,7 +34,7 @@ function draw()
     translate(posX,posY);// Translate is used to move so that the rotate step isn't super complicated
     noStroke();// adds to the abstract effect
     rotate(angle);// rotates the ellipse to create a more random effect
-    fill(color(random(255),mouseX(),mouseY()));// randomizes color
+    fill(color(random(255),mouseX,mouseY);// randomizes color
     ellipse(0 , 0, 10, 90);// draws ellipse
     posY = posY + 2; // Shifts value of Y position
     posX = posX + 1;// Shifts value of X position
