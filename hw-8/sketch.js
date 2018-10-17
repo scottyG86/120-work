@@ -1,4 +1,4 @@
-let particle = {};
+let particle = {};//declares particle object and subparts
 particle.posX = 0
 particle.posY = 0
 particle.domain = 0
@@ -10,7 +10,7 @@ function setup()
 {
   createCanvas(windowWidth,windowHeight);
   background('black')
-  frameRate(24);
+  //frameRate(24);
 }
 function draw()
 {
