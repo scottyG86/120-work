@@ -5,12 +5,12 @@ particle.allColorR = 0
 particle.allColorG = 0
 particle.allColorB = 0
 
-setup()
+function setup()
 {
   createCanvas(windowWidth,windowHeight);
   background('black')
 }
-draw()
+function draw()
 {
   while(posY<1024)
   {
