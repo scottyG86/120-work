@@ -38,9 +38,9 @@ class Ball
     }
     ballSize()
     {
-        if(this.size<300)
+        if(this.size<random(300))
         {
-          this.size += random(10);
+          this.size += random(100);
         }
         else if(this.size>=300)
         {

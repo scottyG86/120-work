@@ -1,5 +1,10 @@
-# Empty p5 sketch.
+Scotty Graham
 
-Please replace contents of this file with appropriate readme information after finishing your p5 sketch.
+https://scottyg86.github.io/120-work/hw-11/
 
-Current p5 version -> 0.7.1
+# Summary
+I Started to work on a audio visualizer but that wound up not working with chrome so I wound up making a group of expanding and popping bubbles.
+
+## Details
+ - I made all of the bubbles pop and expand at different speeds.
+ - all of the bubbles are generated through a class.
