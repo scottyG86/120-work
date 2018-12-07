@@ -24,7 +24,7 @@ function draw()
       }
     }
 
-    for (var i = 0; i < ball.length; i++)//creates the balls
+    for (let i = 0; i < ball.length; i++)//creates the balls
     {
         ball[i].go(ball,i);
     }
