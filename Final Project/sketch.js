@@ -75,7 +75,7 @@ class Snow//class
     this.yPos = random(windowHeight);//declaring the height the snow starts at
     this.deltaX = random(4);// determines the speed of the "wind" pushing the snow
     this.deltaY = random(2);// determines how fast the snow falls
-
+  }
   go(idx)// master method for snow
   {
     this.move()// move method
